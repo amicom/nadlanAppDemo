@@ -14,7 +14,7 @@ Includes the following features:
 - Animated Sidebar component + animated toggler with dimmed background.
 ![02](screenshots/02.png?raw=true)
 - Responsive Sidebar.
-![06](screenshots/06.png?raw=true)
+![07](screenshots/07.png?raw=true)
 - Using Range Slider.
 - Range slider can be adjusted by typing numerical values
 - Scrollable panes have custom scrollbars.
