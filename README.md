@@ -1,7 +1,7 @@
-Demo Project
-This project is for demonstration only and not ready for Production.
+# Demo Project
+**This project is for demonstration only and not ready for Production.**
 
-![Alt text](screenshots/01.png?raw=true)
+![01](screenshots/01.png?raw=true)
 
 Includes the following features:
 
@@ -12,7 +12,11 @@ Includes the following features:
 - Style is written with Sass, built using Dart-Sass.
 - Defined Theme design.
 - Animated Sidebar component + animated toggler with dimmed background.
+![02](screenshots/02.png?raw=true)
 - Responsive Sidebar.
+![03](screenshots/04.png?raw=true)
 - Using Range Slider.
 - Scrollable panes have custom scrollbars.
+![04](screenshots/03.png?raw=true)
 - Showing "Compare" screen.
+![05](screenshots/05.png?raw=true)
