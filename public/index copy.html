@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.80.0" />
+    <title>Starter Template · Bootstrap v5.0</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- delete until </head> and replace with npm solution -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css" integrity="sha512-jN4O0AUkRmE6Jwc8la2I5iBmS+tCDcfUd1eq8nrZIBnDKTmCp5YxxNN1/aetnAH32qT+dDbk1aGhhoaw5cJNlw==" crossorigin="anonymous" />
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js" integrity="sha512-B1xv1CqZlvaOobTbSiJWbRO2iM0iii3wQ/LWnXWJJxKfvIRRJa910sVmyZeOrvI854sLDsFCuFHh4urASj+qgw==" crossorigin="anonymous"></script>
+    
+    
+
+
+
+  </head>
+  <body class="vh-100">
+    <div class="container-fluid px-0 h-100 d-flex flex-column">
+       
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button id="menubtn" class="hamburger hamburger--spin mx-2" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  הרשם
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  התחבר
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      <div class="flex-fill position-relative wrapper">
+    <nav id="sidebar">
+      <div class="right-scrolls">
+        <div class="content">
+          <h5>
+            הנכס
+          </h5>
+          <div class="container">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="apartment"
+                  id="check-apartment"
+                />
+                <label class="form-check-label" for="check-apartment">
+                  דירה
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="penthouse"
+                  id="check-penthouse"
+                />
+                <label class="form-check-label" for="check-penthouse">
+                  פנטהאוז
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="duplex"
+                  id="check-duplex"
+                />
+                <label class="form-check-label" for="check-duplex">
+                  דופלקס
+                </label>
+              </div>
+          </div>
+          <h5>
+            תקציב
+          </h5>
+          <div id="budget-body" class="d-grid gap-3">
+            <div class="container">
+              <div id="range"></div>
+            </div>
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="small">
+                    0.5 מיליון ש"ח
+                  </p>
+                </div>
+                <div>
+                  <p class="small">
+                    25 מיליון ש"ח
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <div style="width: 25%;">
+                  <input
+                    id="slider-input-min"
+                    class="form-control form-control-sm"
+                    type="number"
+                    placeholder="הקלד מספר"
+                  />
+                </div>
+                <div style="width: 25%;">
+                  <input
+                    id="slider-input-max"
+                    class="form-control form-control-sm"
+                    type="number"
+                    placeholder="הקלד מספר"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>    <main class="h-100">
+        <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen=""
+            src="https://www.google.com/maps/embed/v1/view?zoom=12&center=32.0853%2C34.7818&key=AIzaSyBrZaaExLwToVzjH89q5DLIEKp0TqHQpNs"></iframe>
+    </main>    </div>
+    </div>
+
+    <div class="overlay" hidden></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    //The first argument are the elements to which the plugin shall be initialized
+    //The second argument has to be at least a empty object or a object with your desired options
+    OverlayScrollbars(document.querySelectorAll('.right-scrolls'), { className: "os-theme-thin-light"});
+});
+
+
+
+(function() {
+  const element = document.getElementById("menubtn");
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.querySelector(".overlay");
+
+
+
+  
+  element.addEventListener("click",function(){
+    if(element.classList.toggle("is-active")){
+      sidebar.classList.add('active');
+      if(overlay.hasAttribute('hidden')){
+        overlay.removeAttribute('hidden');
+      }
+      requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('active')));
+      overlay.removeEventListener('transitionend', transitionendListener);
+    }else{
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+
+  overlay.addEventListener('transitionend', transitionendListener);
+
+    }
+  })
+
+})();
+
+function transitionendListener(){
+  this.setAttribute('hidden', "");
+}
+    </script>
+
+<script src="assets/js/main.js"></script>
+
+  </body>
+</html>

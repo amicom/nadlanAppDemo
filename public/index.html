@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>מסך ראשי</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css" crossorigin="anonymous" />
+
+  </head>
+  <body class="vh-100">
+    <div class="container-fluid px-0 h-100 d-flex flex-column">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button id="menubtn" class="hamburger hamburger--spin mx-2" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  הרשם
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  התחבר
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="compare.html">
+                  השוואת דירות
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      <div class="flex-fill position-relative wrapper">
+        <nav id="sidebar">
+          <div class="right-scrolls">
+            <div class="content">
+              <h5>
+                הנכס
+              </h5>
+              <div class="container">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="apartment"
+                      id="check-apartment"
+                    />
+                    <label class="form-check-label" for="check-apartment">
+                      דירה
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="penthouse"
+                      id="check-penthouse"
+                    />
+                    <label class="form-check-label" for="check-penthouse">
+                      פנטהאוז
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="duplex"
+                      id="check-duplex"
+                    />
+                    <label class="form-check-label" for="check-duplex">
+                      דופלקס
+                    </label>
+                  </div>
+              </div>
+              <h5>
+                תקציב
+              </h5>
+              <div id="budget-body" class="d-grid gap-3">
+                <div class="container">
+                  <div id="range"></div>
+                </div>
+                <div class="container">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p class="small">
+                        0.5
+                        <span class="d-none d-sm-inline-block">
+                          מיליון ש"ח
+                        </span>
+                        <span class="d-sm-none">
+                          מ' ש"ח
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <p class="small">
+                        25
+                        <span class="d-none d-sm-inline-block">
+                          מיליון ש"ח
+                        </span>
+                        <span class="d-sm-none">
+                          מ' ש"ח
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="d-flex flex-wrap gap-3 justify-content-between">
+                    <div class="field-container">
+                      <p class="small d-sm-none">
+                        מ:
+                      </p>
+                      <div class="float-end">
+                        <input
+                          id="slider-input-min"
+                          class="form-control form-control-sm"
+                          type="number"
+                          placeholder="הקלד מספר"
+                        />
+                      </div>
+                    </div>
+                    <div class="field-container">
+                      <p class="small d-sm-none">
+                        עד:
+                      </p>
+                      <div class="float-end">
+                        <input
+                          id="slider-input-max"
+                          class="form-control form-control-sm"
+                          type="number"
+                          placeholder="הקלד מספר"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>        <main class="h-100">
+            <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen=""
+                src="https://www.google.com/maps/embed/v1/view?zoom=12&center=32.0853%2C34.7818&key=AIzaSyBrZaaExLwToVzjH89q5DLIEKp0TqHQpNs"></iframe>
+        </main>      </div>
+    </div>
+    <div class="overlay" hidden></div>
+
+<script src="assets/js/main.js"></script>
+
+  </body>
+</html>

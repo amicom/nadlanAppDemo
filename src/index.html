@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>מסך ראשי</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css" crossorigin="anonymous" />
+
+  </head>
+  <body class="vh-100">
+    <div class="container-fluid px-0 h-100 d-flex flex-column">
+      {{> topbar home=true }}
+      <div class="flex-fill position-relative wrapper">
+        {{> sidebar }}
+        {{> map }}
+      </div>
+    </div>
+    <div class="overlay" hidden></div>
+
+<script src="assets/js/main.js"></script>
+
+  </body>
+</html>

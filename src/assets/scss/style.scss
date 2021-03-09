@@ -1,0 +1,176 @@
+@import "./bootstrap";
+
+/*!rtl:begin:ignore*/
+@import "./hamburgers";
+@import "./nouislider";
+@import "./os-theme-thin-light";
+/*!rtl:end:ignore*/
+
+.hamburger-box {
+  display: block;
+}
+
+#sidebar {
+  width: 400px;
+  position: absolute;
+  left: -410px;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  background-image: var(--bs-gradient);
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@include media-breakpoint-down(sm) {
+  #sidebar {
+    width: 240px;
+    left: -250px;
+  }
+
+  #budget-body .field-container {
+    width: 100%;
+  }
+}
+
+#sidebar,
+.navbar {
+  z-index: 999;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+.right-scrolls {
+  direction: ltr #{"/* rtl:ignore */"};
+  margin: 0 10px;
+  height: 100%;
+  & .content {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    direction: rtl #{"/* rtl:ignore */"};
+    margin-right: 30px #{"/* rtl:ignore */"};
+  }
+}
+
+.content h5 {
+  margin: 4rem 0 1rem 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: $primary;
+    width: 0.15em;
+    height: 1em;
+    position: relative;
+    top: 4px;
+    margin-left: 4px#{"/* rtl:ignore */"};
+  }
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  &.active {
+    opacity: 0.7;
+  }
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+}
+
+#budget-body {
+  // disable number-field stepper
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  // style the number field
+  .form-control {
+    background-color: transparent;
+    text-align: center;
+    color: $white;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  & .field-container {
+    & * {
+      display: inline-block;
+    }
+    & > div {
+      width: 90px;
+    }
+  }
+}
+
+h1 {
+  color: $primary;
+}
+
+#table {
+  ul {
+    width: 140px;
+    color: $white;
+    & > li:nth-of-type(even) {
+      background: linear-gradient(
+          180deg,
+          rgba(167, 167, 167, 0.5) 0%,
+          rgba(117, 117, 117, 0) 100%
+        ),
+        rgba(95, 94, 94, 0.8);
+    }
+    & > li:nth-of-type(odd) {
+      background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        #231f20;
+    }
+  }
+  #cards-list {
+    ul {
+      min-width: 180px;
+    }
+  }
+}

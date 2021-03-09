@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>השוואת דירות</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.min.css" crossorigin="anonymous" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="vh-100">
+    <div class="container-fluid px-0 h-100 d-flex flex-column">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" id="menubtn" class="hamburger">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="white"
+                class="bi bi-arrow-right"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                ></path>
+              </svg>
+            </a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  הרשם
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  התחבר
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="compare.html">
+                  השוואת דירות
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      <div class="container-fluid flex-fill bg-dark">
+        <div id="table" class="container-fluid text-dark">
+          <h1>
+            השוואת דירות
+          </h1>
+          <div class="row">
+            <div class="col-auto">
+              <ul class="list-group">
+                  <li class="list-group-item">
+                    שם הפרויקט
+                  </li>
+                  <li class="list-group-item">
+                    כתובת
+                  </li>
+                  <li class="list-group-item">
+                    סטטוס
+                  </li>
+                  <li class="list-group-item">
+                    דירה
+                  </li>
+                  <li class="list-group-item">
+                    סוג
+                  </li>
+                  <li class="list-group-item">
+                    קומה
+                  </li>
+                  <li class="list-group-item">
+                    חדרים
+                  </li>
+                  <li class="list-group-item">
+                    שטח בנוי
+                  </li>
+                  <li class="list-group-item">
+                    שטח מרפסת
+                  </li>
+                  <li class="list-group-item">
+                    חניה
+                  </li>
+                  <li class="list-group-item">
+                    מחסן
+                  </li>
+                  <li class="list-group-item">
+                    תאריך אכלוס
+                  </li>
+                  <li class="list-group-item">
+                    מחיר
+                  </li>
+              </ul>
+            </div>
+            <div id="cards-list" class="col">
+              <div>
+                <div class="d-flex flex-row gap-3">
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                  <ul class="list-group">
+                      <li class="list-group-item">
+                        בלוך 35
+                      </li>
+                      <li class="list-group-item">
+                        בלוך 35, תל אביב
+                      </li>
+                      <li class="list-group-item">
+                        למכירה
+                      </li>
+                      <li class="list-group-item">
+                        דירה 4
+                      </li>
+                      <li class="list-group-item">
+                        דירת גן
+                      </li>
+                      <li class="list-group-item">
+                        2
+                      </li>
+                      <li class="list-group-item">
+                        4
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        108 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1
+                      </li>
+                      <li class="list-group-item">
+                        8 מ&quot;ר
+                      </li>
+                      <li class="list-group-item">
+                        1.8.2024
+                      </li>
+                      <li class="list-group-item">
+                        4,320,500 ש&quot;ח
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>      </div>
+    </div>
+    <script src="assets/js/compare.js"></script>
+  </body>
+</html>

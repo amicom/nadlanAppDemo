@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container-fluid">
+    {{#if home}}
+      <button id="menubtn" class="hamburger hamburger--spin mx-2" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    {{/if}}
+    {{#unless home}}
+      <a href="index.html" id="menubtn" class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="white"
+          class="bi bi-arrow-right"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+          ></path>
+        </svg>
+      </a>
+    {{/unless}}
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">
+            הרשם
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            התחבר
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="compare.html">
+            השוואת דירות
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
