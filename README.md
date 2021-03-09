@@ -19,5 +19,5 @@ Includes the following features:
 - Range slider can be adjusted by typing numerical values
 - Scrollable panes have custom scrollbars.
 ![04](screenshots/03.png?raw=true)
-- Showing "Compare" screen.
+- "Compare" screen included.
 ![05](screenshots/05.png?raw=true)
