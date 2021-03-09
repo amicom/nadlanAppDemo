@@ -20,4 +20,4 @@ Includes the following features:
 - Scrollable panes have custom scrollbars.
 ![04](screenshots/03.png?raw=true)
 - "Compare" screen included.
-![05](screenshots/05.png?raw=true)
+![06](screenshots/06.png?raw=true)
