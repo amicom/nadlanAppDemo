@@ -16,6 +16,7 @@ Includes the following features:
 - Responsive Sidebar.
 ![03](screenshots/04.png?raw=true)
 - Using Range Slider.
+- Range slider can be adjusted by typing numerical values
 - Scrollable panes have custom scrollbars.
 ![04](screenshots/03.png?raw=true)
 - Showing "Compare" screen.
