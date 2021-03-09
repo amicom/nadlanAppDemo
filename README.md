@@ -1,7 +1,7 @@
 Demo Project
 This project is for demonstration only and not ready for Production.
 
-![Alt text](screenshots/01.png?raw=true "Title")
+![Alt text](screenshots/01.png?raw=true)
 
 Includes the following features:
 
